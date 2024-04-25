@@ -10,6 +10,12 @@ header {
   position: relative;
 }
 
+.typed__js {
+  font-size: 1rem;
+  letter-spacing: 4px;
+  font-style: italic;
+}
+
 .cta {
   margin-top: 2.5rem;
   display: flex;

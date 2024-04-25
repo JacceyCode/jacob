@@ -19,7 +19,7 @@ const Header = () => {
       ],
       startDelay: 500,
       typeSpeed: 100,
-      backSpeed: 50,
+      backSpeed: 80,
       backDelay: 300,
       smartBackspace: true,
       loop: true,
@@ -37,7 +37,9 @@ const Header = () => {
       <div className="container header__container">
         <h5>Hello, I&apos;m</h5>
         <h1>Jacob Adebayo</h1>
-        <span ref={type} className="text-light typed__js"></span>
+        <div className="typed__js">
+          <span ref={type}></span>
+        </div>
         <CTA />
         <HeaderSocials />
 

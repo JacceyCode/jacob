@@ -11,9 +11,11 @@ header {
 }
 
 .typed__js {
-  font-size: 1rem;
-  letter-spacing: 4px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 3px;
   font-style: italic;
+  color: var(--color-primary) !important;
 }
 
 .cta {

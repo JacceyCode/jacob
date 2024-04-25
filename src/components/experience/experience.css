@@ -44,6 +44,12 @@
   color: var(--color-primary);
 }
 
+.experience__details-item {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
 /* ======= MEDIA QUERIES (MEDIUM DEVICES) ======= */
 @media screen and (max-width: 1024px) {
   .experience__container > div {

@@ -8,6 +8,7 @@ import MOVIEBOX from "../../assets/moviebox.webp";
 import PIZZA from "../../assets/pizza.webp";
 import HELP from "../../assets/helpmeout.webp";
 import CREDPAL from "../../assets/credpal.webp";
+import SERON from "../../assets/seron.png";
 
 const data = [
   {
@@ -42,6 +43,15 @@ const data = [
     stack: "React, Redux, Tailwind CSS, Firebase, Stripe",
     github: "https://github.com/JacceyCode/themarketplace",
     demo: "https://dmarketplace.netlify.app",
+  },
+  {
+    image: SERON,
+    title: "SeronEstate Management App",
+    desc: "An estate management app that allows for sale, purchase or rent of apartments with a chat feature for easy communication among users.",
+    stack:
+      "React, TypeScript, Zustand, SASS, Leaflet, Cloudinary, Node.js, Express.js, MongoDB, Prisma, JWToken, Socket.io",
+    github: "https://github.com/JacceyCode/estate-app",
+    demo: "https://seron-estate-app.vercel.app",
   },
   {
     image: OASIS,
@@ -104,7 +114,7 @@ const Portfolio = () => {
 
             <h3>{project.title}</h3>
             <p>{project.desc}</p>
-            <p>
+            <p className="portfolio__item-stack">
               {" "}
               <em>Stack used :</em> {project.stack}
             </p>

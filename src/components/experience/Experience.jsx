@@ -78,6 +78,13 @@ const Experience = () => {
                 <SiRedux color="#764abc" size={18} />
               </div>
             </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon" />
+              <div className="experience__details-item">
+                <h4>Zustand</h4>
+                <span>🐻</span>
+              </div>
+            </article>
           </div>
         </div>
 

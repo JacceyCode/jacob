@@ -55,6 +55,10 @@
   .experience__container > div {
     padding: 1.5rem;
   }
+
+  .experience__details {
+    gap: 0.2rem;
+  }
 }
 
 /* ======= MEDIA QUERIES (SMALL DEVICES) ======= */

@@ -3,7 +3,8 @@ import RENTALS from "../../assets/rentals.webp";
 import NATOURS from "../../assets/natours.webp";
 import BLOG from "../../assets/blog.webp";
 import DMARKETPLACE from "../../assets/dmarketplace.webp";
-import OASIS from "../../assets/aosis.png";
+import OASISMGT from "../../assets/oasis-mgt.jpeg";
+import OASISCLT from "../../assets/oasis-client.jpeg";
 import MOVIEBOX from "../../assets/moviebox.webp";
 import PIZZA from "../../assets/pizza.webp";
 import HELP from "../../assets/helpmeout.webp";
@@ -12,21 +13,22 @@ import SERON from "../../assets/seron.png";
 
 const data = [
   {
-    image: RENTALS,
-    title: "Vacation Home Rentals",
-    desc: "A rental site that allows for users to put up their property for rent and also rent a property of choice.",
+    image: SERON,
+    title: "SeronEstate Management App",
+    desc: "An estate management app that allows for sale, purchase or rent of apartments with a chat feature for easy communication among users.",
     stack:
-      "TypeScript, React, Redux, Node.js, Express.js, MongoDB, Cloudinary, JWToken",
-    github: "https://github.com/JacceyCode/home-rentals",
-    demo: "https://home-rentals-henna.vercel.app",
+      "React, TypeScript, Zustand, SASS, Leaflet, Cloudinary, Node.js, Express.js, MongoDB, Prisma, JWToken, Socket.io",
+    github: "https://github.com/JacceyCode/estate-app",
+    demo: "https://seron-estate-app.vercel.app",
   },
+
   {
-    image: NATOURS,
-    title: "Natours",
-    desc: "A travel application designed and deployed to enthrall travel enthusiasts by showcasing different tourist attractions, facilitating exploration, reservation, and secure payments.",
-    stack: "Node.js, Express.js, MongoDB, Pug, JWToken, Stripe",
-    github: "https://github.com/JacceyCode/Natours",
-    demo: "https://mynatours-3ltq.onrender.com/",
+    image: OASISCLT,
+    title: "Oasis",
+    desc: "An app developed for tourist's to book cabin accommodation of their choice before a scheduled visit to the tourist centre.",
+    stack: "React, Next.js, NextAuth.js, Tailwind CSS, Supabase",
+    github: "https://github.com/JacceyCode/the-wild-aosis-client-website",
+    demo: "https://the-wild-aosis-client-website.vercel.app",
   },
   {
     image: BLOG,
@@ -45,17 +47,26 @@ const data = [
     demo: "https://dmarketplace.netlify.app",
   },
   {
-    image: SERON,
-    title: "SeronEstate Management App",
-    desc: "An estate management app that allows for sale, purchase or rent of apartments with a chat feature for easy communication among users.",
-    stack:
-      "React, TypeScript, Zustand, SASS, Leaflet, Cloudinary, Node.js, Express.js, MongoDB, Prisma, JWToken, Socket.io",
-    github: "https://github.com/JacceyCode/estate-app",
-    demo: "https://seron-estate-app.vercel.app",
+    image: NATOURS,
+    title: "Natours",
+    desc: "A travel application designed and deployed to enthrall travel enthusiasts by showcasing different tourist attractions, facilitating exploration, reservation, and secure payments.",
+    stack: "Node.js, Express.js, MongoDB, Pug, JWToken, Stripe",
+    github: "https://github.com/JacceyCode/Natours",
+    demo: "https://mynatours-3ltq.onrender.com/",
   },
   {
-    image: OASIS,
-    title: "The Wild-Oasis App",
+    image: RENTALS,
+    title: "Vacation Home Rentals",
+    desc: "A rental site that allows for users to put up their property for rent and also rent a property of choice.",
+    stack:
+      "TypeScript, React, Redux, Node.js, Express.js, MongoDB, Cloudinary, JWToken",
+    github: "https://github.com/JacceyCode/home-rentals",
+    demo: "https://home-rentals-henna.vercel.app",
+  },
+
+  {
+    image: OASISMGT,
+    title: "Oasis Management App",
     desc: "An app developed for a resort to strategically prioritize customer management and reservations. With a glance on the app's dashboard, every customer's details and preferences can be gotten at the click of a finger.",
     stack: "React, Styled Components, Recharts, Supabase",
     github: "https://github.com/JacceyCode/the-wild-oasis",

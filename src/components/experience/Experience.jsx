@@ -8,6 +8,8 @@ import {
   SiRedux,
   SiTailwindcss,
   SiTypescript,
+  SiNextdotjs,
+  SiSupabase,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -69,6 +71,13 @@ const Experience = () => {
               <div className="experience__details-item">
                 <h4>React</h4>
                 <FaReact color="#61dbfb" size={18} />
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon" />
+              <div className="experience__details-item">
+                <h4>Next.js</h4>
+                <SiNextdotjs color="#000000" size={18} />
               </div>
             </article>
             <article className="experience__details">
@@ -136,6 +145,13 @@ const Experience = () => {
               <div className="experience__details-item">
                 <h4>MongoDB</h4>
                 <SiMongodb color="#4db33d" size={18} />
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon" />
+              <div className="experience__details-item">
+                <h4>Supabase</h4>
+                <SiSupabase color="#4db33d" size={18} />
               </div>
             </article>
           </div>

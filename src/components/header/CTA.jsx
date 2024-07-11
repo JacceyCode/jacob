@@ -1,4 +1,4 @@
-import resume from "../../assets/Jacob Adebayo Resume.pdf";
+import resume from "../../assets/Jacob Oluwasesan Adebayo Resume.pdf";
 
 const CTA = () => {
   return (

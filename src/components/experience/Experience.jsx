@@ -13,6 +13,9 @@ import {
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { BiLogoPostgresql } from "react-icons/bi";
+import SQL from "../../assets/sql.png";
+import PYTHON from "../../assets/pyt.png";
+import DJANGO from "../../assets/dj.png";
 
 const Experience = () => {
   return (
@@ -55,6 +58,20 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div className="experience__details-item">
+                <h4>SQL</h4>
+                <img src={SQL} alt="sql icon" className="icon-image" />
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon" />
+              <div className="experience__details-item">
+                <h4>Python</h4>
+                <img src={PYTHON} alt="python icon" className="icon-image" />
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon" />
+              <div className="experience__details-item">
                 <h4>SCSS</h4>
                 <FaSass color="#cc6699" size={18} />
               </div>
@@ -62,7 +79,7 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div className="experience__details-item">
-                <h4>Tailwind CSS</h4>
+                <h4>TailwindCSS</h4>
                 <SiTailwindcss color="#06b6d4" size={18} />
               </div>
             </article>
@@ -112,6 +129,21 @@ const Experience = () => {
               <div className="experience__details-item">
                 <h4>Express JS</h4>
                 <SiExpress color="#4b4a4a" size={24} />
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon" />
+              <div className="experience__details-item">
+                <h4>Python</h4>
+                <img src={PYTHON} alt="python icon" className="icon-image" />
+              </div>
+            </article>
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon" />
+              <div className="experience__details-item">
+                <h4>Django</h4>
+                <img src={DJANGO} alt="django icon" className="icon-image" />
               </div>
             </article>
           </div>

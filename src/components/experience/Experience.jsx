@@ -55,20 +55,7 @@ const Experience = () => {
                 <SiTypescript color="#007acc" size={18} />
               </div>
             </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div className="experience__details-item">
-                <h4>SQL</h4>
-                <img src={SQL} alt="sql icon" className="icon-image" />
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div className="experience__details-item">
-                <h4>Python</h4>
-                <img src={PYTHON} alt="python icon" className="icon-image" />
-              </div>
-            </article>
+
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div className="experience__details-item">
@@ -144,6 +131,14 @@ const Experience = () => {
               <div className="experience__details-item">
                 <h4>Django</h4>
                 <img src={DJANGO} alt="django icon" className="icon-image" />
+              </div>
+            </article>
+
+            <article className="experience__details">
+              <BsPatchCheckFill className="experience__details-icon" />
+              <div className="experience__details-item">
+                <h4>SQL</h4>
+                <img src={SQL} alt="sql icon" className="icon-image" />
               </div>
             </article>
           </div>

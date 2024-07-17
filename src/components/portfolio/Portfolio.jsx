@@ -1,3 +1,13 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+// import Swiper core and required modules
+import { Navigation, Pagination } from "swiper/modules";
+
 import "./portfolio.css";
 import RENTALS from "../../assets/rentals.webp";
 import NATOURS from "../../assets/natours.webp";
@@ -10,8 +20,18 @@ import PIZZA from "../../assets/pizza.webp";
 import HELP from "../../assets/helpmeout.webp";
 import CREDPAL from "../../assets/credpal.webp";
 import SERON from "../../assets/seron.png";
+import BANK from "../../assets/bank.png";
 
 const data = [
+  {
+    image: BANK,
+    title: "OneClick Finance",
+    desc: "A modern app for managing financial transactions and budgets, providing instant access to multiple accounts from one platform.",
+    stack:
+      "React, Next.js, TypeScript, Shadcn, Tailwind CSS, Chart.js, Appwrite, Plaid, Dwolla, Sentry",
+    github: "https://github.com/JacceyCode/finance",
+    demo: "https://bank-on-the-go.vercel.app",
+  },
   {
     image: SERON,
     title: "SeronEstate Management App",
@@ -21,7 +41,6 @@ const data = [
     github: "https://github.com/JacceyCode/estate-app",
     demo: "https://seron-estate-app.vercel.app",
   },
-
   {
     image: OASISCLT,
     title: "Oasis",
@@ -107,43 +126,62 @@ const data = [
 ];
 
 const Portfolio = () => {
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  };
+
   return (
     <section id="portfolio">
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {data.map((project, index) => (
-          <article className="portfolio__item" key={index}>
-            <div className="portfolio__item-image">
-              <img
-                src={project.image}
-                alt="portfolio image"
-                className="poster__image"
-              />
-            </div>
+        <Swiper
+          slidesPerView={1}
+          spaceBetween={30}
+          loop={true}
+          pagination={pagination}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+        >
+          {data.map((project, index) => (
+            <SwiperSlide key={index}>
+              <article className="portfolio__item">
+                <div className="portfolio__item-image">
+                  <img
+                    src={project.image}
+                    alt="portfolio image"
+                    className="poster__image"
+                  />
+                </div>
 
-            <h3>{project.title}</h3>
-            <p>{project.desc}</p>
-            <p className="portfolio__item-stack">
-              {" "}
-              <em>Stack used :</em> {project.stack}
-            </p>
+                <h3>{project.title}</h3>
+                <p>{project.desc}</p>
+                <p className="portfolio__item-stack">
+                  {" "}
+                  <em>Stack used :</em> {project.stack}
+                </p>
 
-            <div className="portfolio__item-cta">
-              <a href={project.github} target="_blank" className="btn">
-                Repo
-              </a>
-              <a
-                href={project.demo}
-                target="_blank"
-                className="btn btn-primary"
-              >
-                Demo
-              </a>
-            </div>
-          </article>
-        ))}
+                <div className="portfolio__item-cta">
+                  <a href={project.github} target="_blank" className="btn">
+                    Repo
+                  </a>
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    className="btn btn-primary"
+                  >
+                    Demo
+                  </a>
+                </div>
+              </article>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   );

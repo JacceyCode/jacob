@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import { Navigation, Pagination } from "swiper/modules";
 
 import "./portfolio.css";
-import RENTALS from "../../assets/rentals.webp";
+// import RENTALS from "../../assets/rentals.webp";
 import NATOURS from "../../assets/natours.webp";
 import BLOG from "../../assets/blog.webp";
 import DMARKETPLACE from "../../assets/dmarketplace.webp";
@@ -17,18 +17,28 @@ import OASISMGT from "../../assets/oasis-mgt.jpeg";
 import OASISCLT from "../../assets/oasis-client.jpeg";
 import MOVIEBOX from "../../assets/moviebox.webp";
 import PIZZA from "../../assets/pizza.webp";
-import HELP from "../../assets/helpmeout.webp";
-import CREDPAL from "../../assets/credpal.webp";
+// import HELP from "../../assets/helpmeout.webp";
+// import CREDPAL from "../../assets/credpal.webp";
 import SERON from "../../assets/seron.png";
 import BANK from "../../assets/bank.png";
+import CAREPLUS from "../../assets/care-plus.png";
 
 const data = [
+  {
+    image: CAREPLUS,
+    title: "CarePlus+",
+    desc: "A healthcare self-management system that allows users to schedule medical appointments. It addresses issues like long wait times, avoid scheduling conflicts, and eliminate the need for rescheduling due to physician unavailability.",
+    stack:
+      "Next.js, TypeScript, ShadCN, Tailwind CSS, Appwrite, Sentry, Twilio",
+    github: "https://github.com/JacceyCode/careplus",
+    demo: "https://care-plus-pi.vercel.app",
+  },
   {
     image: BANK,
     title: "OneClick Finance",
     desc: "A modern app for managing financial transactions and budgets, providing instant access to multiple accounts from one platform.",
     stack:
-      "React, Next.js, TypeScript, Shadcn, Tailwind CSS, Chart.js, Appwrite, Plaid, Dwolla, Sentry",
+      "React, Next.js, TypeScript,CN, Tailwind CSS, Chart.js, Appwrite, Plaid, Dwolla, Sentry",
     github: "https://github.com/JacceyCode/finance",
     demo: "https://bank-on-the-go.vercel.app",
   },
@@ -73,16 +83,15 @@ const data = [
     github: "https://github.com/JacceyCode/Natours",
     demo: "https://mynatours-3ltq.onrender.com/",
   },
-  {
-    image: RENTALS,
-    title: "Vacation Home Rentals",
-    desc: "A rental site that allows for users to put up their property for rent and also rent a property of choice.",
-    stack:
-      "TypeScript, React, Redux, Node.js, Express.js, MongoDB, Cloudinary, JWToken",
-    github: "https://github.com/JacceyCode/home-rentals",
-    demo: "https://home-rentals-henna.vercel.app",
-  },
-
+  // {
+  //   image: RENTALS,
+  //   title: "Vacation Home Rentals",
+  //   desc: "A rental site that allows for users to put up their property for rent and also rent a property of choice.",
+  //   stack:
+  //     "TypeScript, React, Redux, Node.js, Express.js, MongoDB, Cloudinary, JWToken",
+  //   github: "https://github.com/JacceyCode/home-rentals",
+  //   demo: "https://home-rentals-henna.vercel.app",
+  // },
   {
     image: OASISMGT,
     title: "Oasis Management App",
@@ -107,22 +116,22 @@ const data = [
     github: "https://github.com/JacceyCode/fast-react-pizza",
     demo: "https://orderfastpizza.netlify.app",
   },
-  {
-    image: HELP,
-    title: "HelpMeOut",
-    desc: "A landing page developed for an online screen recording chrome extension, which is used to create awareness and educate user's about the extension and also increase the number of users.",
-    stack: "React, Tailwind CSS",
-    github: "https://github.com/JacceyCode/ChromeExtension_HNGxStage5Task",
-    demo: "https://jacceycode-helpmeout.netlify.app",
-  },
-  {
-    image: CREDPAL,
-    title: "CREDPAL",
-    desc: "A landing page developed for an investment product, which is used to create awareness, educate it user's and also onboard new users.",
-    stack: "React, TypeScript, Tailwind CSS",
-    github: "https://github.com/JacceyCode/credpaltest",
-    demo: "https://credpaltest.netlify.app",
-  },
+  // {
+  //   image: HELP,
+  //   title: "HelpMeOut",
+  //   desc: "A landing page developed for an online screen recording chrome extension, which is used to create awareness and educate user's about the extension and also increase the number of users.",
+  //   stack: "React, Tailwind CSS",
+  //   github: "https://github.com/JacceyCode/ChromeExtension_HNGxStage5Task",
+  //   demo: "https://jacceycode-helpmeout.netlify.app",
+  // },
+  // {
+  //   image: CREDPAL,
+  //   title: "CREDPAL",
+  //   desc: "A landing page developed for an investment product, which is used to create awareness, educate it user's and also onboard new users.",
+  //   stack: "React, TypeScript, Tailwind CSS",
+  //   github: "https://github.com/JacceyCode/credpaltest",
+  //   demo: "https://credpaltest.netlify.app",
+  // },
 ];
 
 const Portfolio = () => {
@@ -146,10 +155,22 @@ const Portfolio = () => {
           pagination={pagination}
           navigation={true}
           modules={[Pagination, Navigation]}
-          className="mySwiper"
+          // className="mySwiper"
+          style={{
+            paddingTop: "20px",
+            paddingBottom: "30px",
+          }}
         >
           {data.map((project, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide
+              key={index}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                height: "670px",
+              }}
+            >
               <article className="portfolio__item">
                 <div className="portfolio__item-image">
                   <img

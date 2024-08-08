@@ -13,8 +13,8 @@ const Header = () => {
       strings: [
         "Software Developer...",
         "FullStack Developer...",
-        "Backend Developer...",
         "Frontend Developer...",
+        "Backend Developer...",
         "Mobile Developer...",
       ],
       startDelay: 500,
@@ -35,8 +35,8 @@ const Header = () => {
   return (
     <header>
       <div className="container header__container">
-        <h5>Hello, I&apos;m</h5>
-        <h1>Jacob Adebayo</h1>
+        <h5>Hello 👋, I&apos;m</h5>
+        <h1 style={{ fontSize: "35px" }}>Jacob Oluwasesan Adebayo</h1>
         <div className="typed__js">
           <span ref={type}></span>
         </div>

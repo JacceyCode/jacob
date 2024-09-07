@@ -12,7 +12,7 @@ import "./portfolio.css";
 // import RENTALS from "../../assets/rentals.webp";
 import NATOURS from "../../assets/natours.webp";
 import BLOG from "../../assets/blog.webp";
-// import DMARKETPLACE from "../../assets/dmarketplace.webp";
+import DMARKETPLACE from "../../assets/dmarketplace.webp";
 import OASISMGT from "../../assets/oasis-mgt.jpeg";
 import OASISCLT from "../../assets/oasis-client.jpeg";
 import MOVIEBOX from "../../assets/moviebox.webp";
@@ -67,14 +67,14 @@ const data = [
     github: "https://github.com/JacceyCode/blog-site",
     demo: "https://jacceyblog.netlify.app/",
   },
-  // {
-  //   image: DMARKETPLACE,
-  //   title: "D-MarketPlace",
-  //   desc: "An online e-commerce store incorporating a seamless payment gateway, user account management, authentication, and an intuitive cart system.",
-  //   stack: "React, Redux, Tailwind CSS, Firebase, Stripe",
-  //   github: "https://github.com/JacceyCode/themarketplace",
-  //   demo: "https://dmarketplace.netlify.app",
-  // },
+  {
+    image: DMARKETPLACE,
+    title: "D-MarketPlace",
+    desc: "An online e-commerce store incorporating a seamless payment gateway, user account management, authentication, and an intuitive cart system.",
+    stack: "React, Redux, Tailwind CSS, Firebase, Stripe",
+    github: "https://github.com/JacceyCode/themarketplace",
+    demo: "https://dmarketplace.netlify.app",
+  },
   {
     image: NATOURS,
     title: "Natours",
